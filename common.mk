@@ -38,7 +38,7 @@ HAVE_LIBBFD := false
 # missing includes for libbfd
 ifeq ($(findstring prebuilt,$(TARGET_TOOLS_PREFIX)),prebuilt)
 ifeq ($(TARGET_ARCH),arm)
-toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.6
+toolchain := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-$(TARGET_GCC_VERSION)
 common_host_extra_flags := -DANDROID_TARGET_ARM
 endif
 
